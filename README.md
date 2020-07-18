@@ -5,7 +5,7 @@ Home: https://python-sounddevice.readthedocs.io/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Play and Record Sound with Python
 
