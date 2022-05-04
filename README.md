@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@scopatz](https://github.com/scopatz/)
+* [@tyrius02](https://github.com/tyrius02/)
 
