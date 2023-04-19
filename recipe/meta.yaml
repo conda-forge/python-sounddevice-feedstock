@@ -1,7 +1,7 @@
 {% set name = "python-sounddevice" %}
 {% set pypi_name = "sounddevice" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "1c9b07cff59c837d258002ed806ee134ed367ef11042bd7d283d6ce407bf889c" %}
+{% set version = "0.4.6" %}
+{% set sha256 = "3236b78f15f0415bdf006a620cef073d0c0522851d66f4a961ed6d8eb1482fe9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1 
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
