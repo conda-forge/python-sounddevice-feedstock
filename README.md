@@ -1,11 +1,11 @@
-About python-sounddevice
-========================
+About python-sounddevice-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-sounddevice-feedstock/blob/main/LICENSE.txt)
 
 Home: https://python-sounddevice.readthedocs.io/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/master-feedstock/blob/main/LICENSE.txt)
 
 Summary: Play and Record Sound with Python
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/master-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5993&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-sounddevice-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -146,5 +146,4 @@ Feedstock Maintainers
 =====================
 
 * [@scopatz](https://github.com/scopatz/)
-* [@tyrius02](https://github.com/tyrius02/)
 
