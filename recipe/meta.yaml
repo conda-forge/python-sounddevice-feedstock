@@ -1,7 +1,7 @@
 {% set name = "python-sounddevice" %}
 {% set pypi_name = "sounddevice" %}
-{% set version = "0.4.6" %}
-{% set sha256 = "3236b78f15f0415bdf006a620cef073d0c0522851d66f4a961ed6d8eb1482fe9" %}
+{% set version = "0.4.7" %}
+{% set sha256 = "69b386818d50a2d518607d4b973442e8d524760c7cd6c8b8be03d8c98fc4bce7" %}
 
 package:
   name: {{ name|lower }}
