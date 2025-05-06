@@ -9,27 +9,29 @@ package:
 
 source:
   fn: {{ pypi_name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - cffi
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - cffi
     - portaudio
     - numpy
 
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sounddevice
 
@@ -43,5 +45,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - MementoRC
     - tyrius02
     - scopatz
