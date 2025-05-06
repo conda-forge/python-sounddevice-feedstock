@@ -1,7 +1,7 @@
 {% set name = "python-sounddevice" %}
 {% set pypi_name = "sounddevice" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "0de95277654b3d403d9c15ded3c6cedf307e9b27cc9ce7bd995a2891d0c955af" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "09ca991daeda8ce4be9ac91e15a9a81c8f81efa6b695a348c9171ea0c16cb041" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - cffi
+    - setuptools
   run:
     - python >={{ python_min }}
     - cffi
