@@ -145,6 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@MementoRC](https://github.com/MementoRC/)
 * [@scopatz](https://github.com/scopatz/)
 * [@tyrius02](https://github.com/tyrius02/)
 
