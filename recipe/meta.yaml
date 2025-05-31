@@ -24,7 +24,7 @@ requirements:
     - cffi
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python
     - cffi
     - portaudio
     - numpy
