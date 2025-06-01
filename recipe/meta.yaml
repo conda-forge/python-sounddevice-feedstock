@@ -13,11 +13,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: true  # [not unix]
-  number: 1
+  skip: true  # [unix]
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
+  build:
+    - setuptools
   host:
     - python
     - pip
