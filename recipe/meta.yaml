@@ -13,18 +13,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
-  number: 0
+  skip: true  # [not unix]
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - pip
     - cffi
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python
     - cffi
     - portaudio
     - numpy
@@ -32,7 +32,7 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python
   imports:
     - sounddevice
 
