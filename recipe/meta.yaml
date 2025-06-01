@@ -13,13 +13,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: win
+  skip: true  # [not unix]
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - pip
     - cffi
     - setuptools
@@ -32,7 +32,7 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python
   imports:
     - sounddevice
 
