@@ -13,16 +13,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: true  # [not unix]
   number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
+    - setuptools
+  host:
     - python
     - pip
     - cffi
-    - setuptools
   run:
     - python
     - cffi
