@@ -13,26 +13,25 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: true  # [not unix]
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cffi                                   # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - python                                 # [build_platform != target_platform]
+    - setuptools
   host:
-    - python
-    - pip
     - cffi
+    - pip
+    - python
     - setuptools
   run:
-    - python
     - cffi
     - portaudio
     - numpy
-
+    - python
 
 test:
   requires:
