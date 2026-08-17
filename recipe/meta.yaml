@@ -1,7 +1,7 @@
 {% set name = "python-sounddevice" %}
 {% set pypi_name = "sounddevice" %}
-{% set version = "0.5.5" %}
-{% set sha256 = "22487b65198cb5bf2208755105b524f78ad173e5ab6b445bdab1c989f6698df3" %}
+{% set version = "0.5.6" %}
+{% set sha256 = "8ec9fbfde2e32f020b167e348f3ab3bac6625a5f15af524d790108ac7147a410" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ pypi_name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
